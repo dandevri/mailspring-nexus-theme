@@ -24,7 +24,7 @@ here, so you can use modern CSS like -webkit-filter and -webkit-mask-image
 background color.)
 */
 .sheet-toolbar {
-  border-bottom: 1px solid @border-color-divider;
+  border-bottom: 1px solid @background-primary;
   box-shadow: none;
 }
 
@@ -49,4 +49,81 @@ img.content-light {
 
 .thread-list .list-item:not(.unread):not(.selected):not(.focused) {
   color: #aaa;
+}
+
+.empty-state {
+  display: none;
+}
+
+.sheet-toolbar-container {
+  background: @background-primary;
+  color: #fff;
+}
+
+.nylas-outline-view .item {
+  color: #585858cc;
+}
+
+.nylas-outline-view .item img.content-mask {
+  background-color: #585858cc;
+}
+
+.toolbar-activity {
+  display: none;
+}
+
+.list-tabular .list-tabular-item.selected .checkmark .inner {
+  background-image: none;
+}
+
+.thread-search-bar {
+  background: #000;
+}
+
+.thread-icon,
+.mail-important-icon,
+.draft-icon,
+.action-trash
+.action-archive {
+  -webkit-filter: brightness(100) !important;
+  filter: brightness(100) !important;
+} 
+
+.thread-list .list-item .list-column-HoverActions .action.action-trash {
+  background: url(../static/images/thread-list-quick-actions/ic-quick-button-trash@2x.png) no-repeat center, #fff;
+}
+
+.thread-list .list-item .list-column-HoverActions .action.action-archive {
+  background: url('../static/images/thread-list-quick-actions/ic-quick-button-archive@2x.png') center no-repeat, #fff;
+}
+
+.button-dropdown.btn-emphasis .primary-item, .button-dropdown.btn-emphasis .secondary-picker, .button-dropdown.btn-emphasis .only-item {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  background: #fff;
+  box-shadow: none;
+  border: 1px solid #000;
+
+  span img {
+    display: none;
+  }
+}
+
+.button-dropdown.btn-emphasis .secondary-picker img.content-mask {
+  background-color: #000;
+}
+
+.mail-label {
+  background: #fff !important;
+  color: #000 !important;
+  box-shadow: none;
+}
+
+.thread-search-bar .suggestions .suggestion.selected {
+  color: #000;
+
+  .suggestion-token {
+    color: #000;
+  }
 }
