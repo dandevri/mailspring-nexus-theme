@@ -1,0 +1,13 @@
+{
+  "name": "nexus-theme",
+  "title": "Nexus Theme",
+  "displayName": "Nexus",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "Dark theme, matte black everything.",
+  "license": "GPL-3.0",
+  "engines": {
+    "mailspring": "*"
+  }
+}
+
